@@ -24,3 +24,12 @@ module "replication_rule" {
   iam_replication_role = module.iam_replication.iam_replication_role
   bucket_versioning    = module.s3_replication.bucket_versioning
 }
+
+module "name_ecr" {
+  source = "./modules/ECR"
+
+  name_ecr = var.name_ecr
+}
+module "secret_manager" {
+  source = "./modules/secret_manager"
+}

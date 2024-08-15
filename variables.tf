@@ -26,3 +26,8 @@ variable "project" {
   description = "Name Project"
   default     = "lab-terraform"
 }
+
+variable "name_ecr" {
+  description = "Name Project"
+  default     = "test-ecr"
+}
